@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,900);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+*{
+	font-family: inherit;
+	font-size: inherit;
+	color:inherit;
+	line-height: 1.4;
+}
+
+html,body{
+	width:100%;
+	background-color: #eeeeee;
+	color:#333333;
+}
+
+
+/*Grid system*/
+.grid-wrapper{
+	width:100%;
+}
+
+.row:before, .row:after{
+	content:"";
+	display:table;
+	clear:both;
+}
+
+[class*="col-"]{
+	float:left;
+	min-height:1px;
+	width:33.33%;
+}
+
+.col-1{
+	width:33.33%;
+}
+
+.col-2{
+	width:66.66%;
+}
+
+.col-3{
+	width:100%;
+}
+
+
+/*misc*/
+.clearfix{
+	clear:both;
+}
+
+.noselect{
+	user-drag: none; 
+	-webkit-user-drag: none;
+
+	user-select:none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select:none;
+	-o-user-select:none;
+}
+/*Responsiveness*/
+
+@media screen and (max-width: 60em){
+	.col-1{
+		width:100%;
+	}
+
+	.col-2{
+		width:100%;
+	}
+
+	.col-3{
+		width:100%;
+	}
+}
