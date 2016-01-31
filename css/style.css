@@ -1,6 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300,900);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
-
 *{
 	font-family: inherit;
 	font-size: inherit;
@@ -11,9 +8,32 @@
 html,body{
 	width:100%;
 	background-color: #eeeeee;
+	font-family: serif;
 	color:#333333;
 }
 
+h1{
+	font-size:4em;
+}
+
+.wrapper{
+	width: 100%;
+	max-width:45em;
+	padding:1em;
+	margin:0 auto;
+}
+
+.heading{
+	padding-top: 1em;
+	padding-bottom: 1em;
+
+	border-bottom:1px solid #cccccc;
+}
+
+.subheading{
+	font-size:1.2em;
+	letter-spacing: -0.07em;
+}
 
 /*Grid system*/
 .grid-wrapper{
